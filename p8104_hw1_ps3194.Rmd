@@ -1,0 +1,36 @@
+---
+title: "p8104_hw1_ps3194"
+author: "Pangsibo Shen"
+date: "9/19/2020"
+output: 
+  pdf_document:
+  latex_engine: pdflatex
+fontsize: 12pt
+---
+
+## Problem 1
+#### Prove the second half of the DeMorgan's Laws. i.e.
+
+$\\(A \cap B)^{c} = A^{c} \cup B^{c}$
+
+#### solution:
+we need to prove that $(A \cap B)^{c} \subset (A^{c} \cup B^{c})$ and $A^{c} \cup B^{c} \subset (A \cap B)^{c}$
+
+$\\(i):$
+$\\ \forall x \in (A \cap B)^{c}$ definition of complement
+$\\ \Rightarrow x \notin (A\cap B)$ proof by contradiction
+$\\ \Rightarrow x \notin A$ or $x \notin B$ definition of complement
+$\\ \Rightarrow x \in A^{c}$ or $x \in B^{c}$ definition of union
+$\\ \Rightarrow x \in A^{c}$ or $x \in B^{c}$ we get $(A \cap B)^{c} \subset (A^{c} \cup B^{c})$
+
+$\\(ii):$
+$\\ \forall x \in A^{c} \cup B^{c}$ definition of union
+$\\ \Rightarrow x \in A^{c}$ or $x \in B^c$ definition of complement
+$\\ \Rightarrow x \notin A$ or $x \notin B$ proof by contradiction
+$\\ \Rightarrow x \notin (A \cap B)$ definition of complement
+$\\ \Rightarrow x \in (A \cap B)^c$ we get $A^{c} \cup B^{c} \subset (A \cap B)^{c}$
+
+$\\(i)+(ii)$ by definition of set equality
+$\\\Rightarrow (A \cap B)^{c} = A^{c} \cup B^{c}$ complete the proof
+
+
