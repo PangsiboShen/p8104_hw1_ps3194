@@ -90,3 +90,10 @@ $\\(b)$suppose the probability of her passing the second test is 0.6. What is $P
 
 $\\P(A \cup B) = P(B)+ P(A \cap B^c) = 0.9$
 $\\P(B)= 0.6$ Hence $P(A \cap B^c) = P(A \cup B)- P(B) = 0.9-0.6 = 0.3$
+
+## Problem 5
+#### A bag has four balls labeled 1,2,3, and 4. Two balls are drawn at random with replacement from the bag and the sum of their number is recorded. Continue the trail. Find the probability that “sum is 3” occurs before “sum is 5”.
+
+#### solution: 
+Based on law of Total Probability (LTP), the 
+$P(sum \enspace 3 \enspace before \enspace 5) = P(sum \enspace 3 \enspace before \enspace 5|3 \enspace first)*P(3 \enspace first)+\\P(sum \enspace 3 \enspace before \enspace 5|5 \enspace first)*P(5 \enspace first)+\\P(sum \enspace 3 \enspace before \enspace 5|other sum \enspace first)*P(othersum \enspace first) \\= 1*2/16 + 0 + P(sum \enspace 3 \enspace before \enspace 5)*(1-2/16-10/16) \\\Rightarrow P(sum \enspace 3 \enspace before \enspace 5) = 1/3$
