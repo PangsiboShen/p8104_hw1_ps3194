@@ -33,4 +33,60 @@ $\\ \Rightarrow x \in (A \cap B)^c$ we get $A^{c} \cup B^{c} \subset (A \cap B)^
 $\\(i)+(ii)$ by definition of set equality
 $\\\Rightarrow (A \cap B)^{c} = A^{c} \cup B^{c}$ complete the proof
 
+## Problem 2
+#### Suppose that 3 events $A, B, C$ are defined on sample space $\Omega$. Use union, intersection, and complement operations to represent the following event:
+#### (a) both $A$ and $B$ occur but not C
+#### solution:
+$A \cap B\cap  C^c$
 
+#### (b) at least two events occur
+#### solution: 
+$(A\cap B)\cup (A \cap C) \cup (B \cap C)$
+
+#### (c) at most one event occurs
+#### solution: 
+$(A\cap B)^c\cap (A \cap C)^c \cap (B \cap C)^c$
+
+#### (d) exactly one event not occurs
+#### solution: 
+$[A \cap (B^c \cap C^c)]\cup[B \cap(A^c \cap C^c)]\cup[C\cap(A^c \cap B^c)]^c$
+
+#### (e) at least one event not occurs
+#### solution: 
+$(A \cup B \cup C)^c$
+
+## Problem 3
+#### $A,B$ are two events defined on sample space $\Omega$. Prove that:
+
+$\\(a)$ if $A \subset B$, then $P(A) \leq P(B)$
+
+#### solution: 
+
+Since $E \subset F$, it follows that we can express $F$ as
+$F = E \cup E^cF$ Hence, because $E$ and $E^cF$ are mutually exclusive, we obtain, from Axiom 3 of probability, $P(F) = P(E) + P(E^{c}F)$ which proves the result, since $P(E^{c}F) \geq 0$. 
+
+$\\(b)$ $P(A \cap B^c) = P(A)-P(A \cap B)$
+
+#### solution: 
+
+$\\A$ can be written as the union of the two disjoint events $A \cap B^c$ and $A \cap B$. Thus, from Axiom 3 of probability, we obtain $\\P(A) = P[(A \cap B^c)\cup (A \cap B)]$
+$\\ = P(A \cap B^c)+P(A \cap B)$.
+After manipulation we get $P(A \cap B^c) = P(A)-P(A \cap B)$. Thus complete the proof.
+
+## Problem 4
+#### Susan took two tests. The probability of her passing at least one test is 0.9. Define events $A$ and $B$ as:
+$\\A:$ she passed the first test
+$\\B:$ she passed the second test
+$\\(a)$suppose the probability of her only passing the second test is 0.4. What is $P(A)$?
+
+#### solution: 
+
+$\\P(A \cup B) = P(A)+ P(B \cap A^c) = 0.9$ 
+$\\ P(B \cap A^c)= 0.4$ Hence $P(A) = 0.9 - 0.4 =0.5$
+
+$\\(b)$suppose the probability of her passing the second test is 0.6. What is $P(A \cap B^c)$?
+
+#### solution: 
+
+$\\P(A \cup B) = P(B)+ P(A \cap B^c) = 0.9$
+$\\P(B)= 0.6$ Hence $P(A \cap B^c) = P(A \cup B)- P(B) = 0.9-0.6 = 0.3$
