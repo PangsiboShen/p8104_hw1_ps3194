@@ -49,11 +49,11 @@ $(A\cap B)^c\cap (A \cap C)^c \cap (B \cap C)^c$
 
 #### (d) exactly one event not occurs
 #### solution: 
-$[A \cap (B^c \cap C^c)]\cup[B \cap(A^c \cap C^c)]\cup[C\cap(A^c \cap B^c)]^c$
+$[A \cap (B^c \cap C^c)]\cup[B \cap(A^c \cap C^c)]\cup[C\cap(A^c \cap B^c)]$
 
 #### (e) at least one event not occurs
 #### solution: 
-$(A \cup B \cup C)^c$
+$(A \cap B \cap C)^c$
 
 ## Problem 3
 #### $A,B$ are two events defined on sample space $\Omega$. Prove that:
@@ -69,7 +69,7 @@ $\\(b)$ $P(A \cap B^c) = P(A)-P(A \cap B)$
 
 #### solution: 
 
-$\\A$ can be written as the union of the two disjoint events $A \cap B^c$ and $A \cap B$. Thus, from Axiom 3 of probability, we obtain $\\P(A) = P[(A \cap B^c)\cup (A \cap B)]$
+$\\A$ can be written as the union of the two disjoint events $A \cap B^c$ and $A \cap B$.Hence  $\\(A \cap B^c) \cap (A \cap B) = \emptyset$ and two events are independent. From Axiom 3 of probability, we obtain $\\P(A) = P[(A \cap B^c)\cup (A \cap B)]$
 $\\ = P(A \cap B^c)+P(A \cap B)$.
 After manipulation we get $P(A \cap B^c) = P(A)-P(A \cap B)$. Thus complete the proof.
 
@@ -97,3 +97,27 @@ $\\P(B)= 0.6$ Hence $P(A \cap B^c) = P(A \cup B)- P(B) = 0.9-0.6 = 0.3$
 #### solution: 
 Based on law of Total Probability (LTP), the 
 $P(sum \enspace 3 \enspace before \enspace 5) = P(sum \enspace 3 \enspace before \enspace 5|3 \enspace first)*P(3 \enspace first)+\\P(sum \enspace 3 \enspace before \enspace 5|5 \enspace first)*P(5 \enspace first)+\\P(sum \enspace 3 \enspace before \enspace 5|other sum \enspace first)*P(othersum \enspace first) \\= 1*2/16 + 0 + P(sum \enspace 3 \enspace before \enspace 5)*(1-2/16-10/16) \\\Rightarrow P(sum \enspace 3 \enspace before \enspace 5) = 1/3$
+
+## Problem 6(Extra)
+
+#### solution: 
+
+When n = 2, we first need to prove that $P(A_1 \cup A_2) = P(A_1)+P(A_2) - P(A_1 \cap A_2)$
+We first have $\\ A_1 \cup A_2 = A_1 \cup (A_1^c \cap A_2)$
+$\\ A_1 \cap (A_1^c \cap A_2) =  (A_1 \cap A_1^c) \cap A_2 = \emptyset \cap A_2 = \emptyset$
+we then have $\\A_2 = (A_1 \cap A_2)\cup(A_1^c \cap A_2)$
+$\\ (A_1 \cap A_2)\cap (A_1^c \cap A_2) = \emptyset$
+$\\ P(A_1 \cup A_2) =  P(A_1) + P(A_1^c \cap A_2)$ as one
+$\\ P(A_2) = P(A_1 \cap A_2) + P(A_1^c \cap A_2)$ as two
+from one minus two we get $\\ P(A_1 \cup A_2) -P(A_2) = P(A_1) - P(A_1 \cap A_2)$
+$\\ \Rightarrow P(A_1 \cup A_2) =P(A_1) +P(A_2) - P(A_1 \cap A_2)$ Thus complete the proof for n=2
+
+Now assume for n = k $P(A_1\cup A_2 \cup ...\cup A_k) = \sum^k_{i=1}P(A_i)- \sum^k_{i1<i2}P(A_{i1} \cap A_{i2})+...+(-1)^{k+1}\sum_{i1<i2<...<ik}P(A_{i1} \cap A_{i2} \cap ... \cap A_k)$ and let $B = A_{i1} \cap A_{i2} \cap ... \cap A_k$ then $\\P(B \cup A_{k+1}) = P(B) +P(A_{k+1}) - P(B \cap A_{k+1})$ 
+
+I tried but I have to give up from here : (
+
+
+
+
+
+
